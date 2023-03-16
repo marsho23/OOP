@@ -57,8 +57,8 @@ public class Garage {
 		vehiclesBeingRemoved.add(v1);
 
 		
-		removeMultipleVehicles (vehicles, vehiclesBeingRemoved);
-		
+		//removeMultipleVehicles (vehicles, vehiclesBeingRemoved);
+		fixVehicle(v2);
 		
 		for (Vehicle vehicle:vehicles) {
 			System.out.println(vehicle.getVehicleType());
@@ -68,18 +68,8 @@ public class Garage {
 	
 	public static void fixVehicle(Vehicle vehicle) {
 		float bill;
-		if (vehicle.getClass().getSimpleName().equals("Car")) {
-			bill = 100;
-			System.out.println("Vehicle is fixed and bill is "+bill+" pounds");			
-		}
-		else if (vehicle.getClass().getSimpleName().equals("Lorry")){
-			bill = 200;
-			System.out.println("Vehicle is fixed and bill is "+bill+" pounds");			
-		}			
-		else if (vehicle.getClass().getSimpleName().equals("Bus")){
-			bill = 300;
-			System.out.println("Vehicle is fixed and bill is "+bill+" pounds");			
-		}
+		bill=vehicle.calcBill();
+		System.out.println("Vehicle is fixed and bill is "+bill+" pounds");			
 	}
 	
 	public static void removeMultipleVehicles (List<Vehicle> vehicles, List<Vehicle> vehiclesBeingRemoved) {
