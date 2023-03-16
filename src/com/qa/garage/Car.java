@@ -29,6 +29,11 @@ public class Car extends Vehicle {
 	public void setEngineSize(float engineSize) {
 		this.engineSize = engineSize;
 	}
+
+	@Override
+	public int calcBill() {
+		return 10;
+	}
 	
 	
 }
