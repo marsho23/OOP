@@ -1,4 +1,4 @@
-package com.qa.garage;
+package com.qa.garage2;
 
 public class Vehicle {
 	
@@ -6,18 +6,19 @@ public class Vehicle {
 	private int numberOfWheels;
 	private String fuelType;
 	private String vehicleType;
-	
+	private int id;
 
-	public Vehicle(String colour, int numberOfWheels,String fuelType, String vehicleType) {
-		this.colour = colour;
-		this.numberOfWheels = numberOfWheels;
-		this.fuelType = fuelType;
-		this.vehicleType=vehicleType;
-	}
-	
+
 	public Vehicle() {
 	}
 	
+	public Vehicle(int id, String colour, int numberOfWheels,String fuelType, String vehicleType) {
+		this.id = id;
+		this.colour = colour;
+		this.numberOfWheels = numberOfWheels;
+		this.fuelType = fuelType;
+		this.vehicleType=vehicleType;	}
+
 	public void driveForward() {
 		System.out.println("Driving forward");
 	}
@@ -30,6 +31,14 @@ public class Vehicle {
 		System.out.println("stopped");
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 	public String getColour() {
 		return colour;
 	}
