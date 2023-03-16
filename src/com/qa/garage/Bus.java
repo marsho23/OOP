@@ -31,6 +31,11 @@ public class Bus extends Vehicle {
 	public void setNumberOfFloors(int numberOfFloors) {
 		this.numberOfFloors = numberOfFloors;
 	}
+
+	@Override
+	public int calcBill() {
+		return 30;
+	}
 	
 
 }
