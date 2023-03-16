@@ -1,4 +1,4 @@
-package com.qa.garage;
+package com.qa.garage2;
 
 public class Car extends Vehicle {
 	private int numberOfDoors;
@@ -8,10 +8,11 @@ public class Car extends Vehicle {
 		
 	}
 	
-	//public Car(int numberOfDoors, float engineSize) {
-		//this.numberOfDoors = numberOfDoors;
-		//this.engineSize = engineSize;
-	//}
+	public Car(int numberOfDoors, float engineSize,int id, String colour, int numberOfWheels, String fuelType, String vehicleType) {
+		super(id, colour, numberOfWheels, fuelType, vehicleType);
+		this.numberOfDoors = numberOfDoors;
+		this.engineSize = engineSize;
+	}
 
 	public int getNumberOfDoors() {
 		return numberOfDoors;
@@ -31,3 +32,4 @@ public class Car extends Vehicle {
 	
 	
 }
+
