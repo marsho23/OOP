@@ -1,4 +1,4 @@
-package com.qa.garage;
+package com.qa.garage2;
 
 public class Lorry extends Vehicle{
 	private float height;
@@ -7,7 +7,8 @@ public class Lorry extends Vehicle{
 	public Lorry() {
 	}
 	
-	public Lorry(float height, float cubicCapacity) {
+	public Lorry(float height, float cubicCapacity,int id,String colour, int numberOfWheels, String fuelType, String vehicleType) {
+		super(id, colour, numberOfWheels, fuelType, vehicleType);
 		this.height=height;
 		this.cubicCapacity=cubicCapacity;
 	}
