@@ -28,6 +28,11 @@ public class Lorry extends Vehicle{
 	public void setCubicCapacity(int cubicCapacity) {
 		this.cubicCapacity = cubicCapacity;
 	}
+
+	@Override
+	public int calcBill() {
+		return 20;
+	}
 	
 	
 }
