@@ -1,12 +1,13 @@
 package com.qa.garage2;
 
-public class Vehicle {
+public abstract class Vehicle {
 	
 	private String colour;
 	private int numberOfWheels;
 	private String fuelType;
 	private String vehicleType;
 	private int id;
+	public abstract int calcBill();
 
 
 	public Vehicle() {
